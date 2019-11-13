@@ -1,0 +1,29 @@
+#decor 
+{
+    position: relative;
+    background-color: #000;
+    width: 600px;
+    height: 400px;
+}
+#decor div 
+{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+}
+#rouge 
+{
+    background-color: #f00;
+    left: 0;
+}
+#rouge.chapitre1 
+{
+    transition: all 3s ease;
+    left: 375px;
+}
+#vert 
+{
+    background-color: #0f0;
+    left: 500px;
+}

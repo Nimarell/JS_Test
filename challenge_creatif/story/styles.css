@@ -1,0 +1,439 @@
+h1 {font-size: 100px;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+}
+
+h1 em { color: red;
+        font-style: normal;  
+}
+
+h1 strong { color: green;
+}
+
+#play { border-radius:50px;
+        width:100px;
+        height:100px;
+        font-size: 70px;
+        color: blue;
+        background-color: white;
+        border: solid blue;
+        border-width: 1px;
+        position: absolute;
+        top: 320px;
+        left: 450px;
+}
+
+#decors 
+{
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: solid grey;
+    width: 1000px;
+    height: 650px;
+}
+
+#characters div 
+{
+    position: absolute;
+}
+
+#red 
+{
+    background-color: #f00;
+    left: 1000px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+#green 
+{   position: absolute;
+    background-color: #0f0;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 50px;
+}
+
+#darkRed {  background-color: #800000;
+            left: 1000px;
+            bottom: 0px;
+            width: 100px;
+            height: 100px;
+}
+
+#darkGreen {    position: absolute;
+                background-color: #008000;
+                width: 0px;
+                height: 100px;
+                bottom: 0px;
+}
+
+#castle {   position: relative;
+
+}
+
+#castle div { display: inline-block;
+}
+
+.castleDungeon {width: 0;
+                height: 0;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 50px solid grey;
+                position: absolute;
+}
+
+.castleTower {  background-color: grey;
+                height: 600px;
+                width: 50px;
+                position: absolute;
+                top: 50px;
+}
+
+#castleWalls {  background-color: grey;
+                height: 450px;
+                width: 400px;
+                position: absolute;
+                top: 200px;
+                left: 50px;
+}
+
+.Right {left: 450px;
+}
+
+#castleDoorHole {   position: absolute;
+                background-color: white;
+                height: 150px;
+                width: 100px;
+                left: 200px;
+                top: 500px;
+}
+
+#castleDoor {   position: absolute;
+                background-color: #704300;
+                height: 150px;
+                width: 100px;
+                left: 200px;
+                top: 500px;
+}
+
+span { display: block; }
+
+#heart {    opacity: 0;
+            color: red;
+            font-size: 30px;
+}
+
+#music {    opacity: 0;
+            font-size: 30px;
+}
+
+#insult1,#insult2,#insult3,#insult4 {   opacity: 0;
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                     }
+
+#exclamation {  opacity: 0;
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+.vanishSlow {
+    animation-name: vanishSlow;
+    animation-duration: 2s;
+}
+
+.redmeoSpeach {
+    animation-name: redmeoSpeach;
+    animation-duration: 6s;
+}
+
+.greenClimbing {
+    animation-name: greenClimbing;
+    animation-duration: 2s;
+}
+
+.greenSpeach {
+    animation-name: greenSpeach;
+    animation-duration: 6s;
+}
+
+.redmeoStay {
+    animation-name: redmeoStay;
+    animation-duration: 12s;
+}
+
+.doorOpen {
+    animation-name: doorOpen;
+    animation-duration: 2s;
+}
+
+.darkGreenComing {
+    animation-name: darkGreenComing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.darkGreenSpeach {
+    animation-name: darkGreenSpeach;
+    animation-duration: 6s;
+}
+
+.greenStay {
+    animation-name: greenStay;
+    animation-duration: 5s;
+}
+
+.redReaction {
+    animation-name: redReaction;
+    animation-duration: 6s;
+}
+
+.up {
+    animation-name: up;
+    animation-duration: 1s;
+}
+
+@keyframes redmeoSpeach {
+    0%{}
+    28%{
+        left: 650px;
+        bottom: 0px;
+    }
+    30%{
+        left: 650px;
+        bottom: 30px;
+    }
+    32%{
+        left: 650px;
+        bottom: 0px;
+    }
+    34%{
+        left: 650px;
+        bottom: 30px;
+    }
+    36%{
+        left: 650px;
+        bottom: 0px;
+    }
+    100%{
+        left: 650px;
+        bottom: 0px;
+    }
+
+}
+
+@keyframes doorOpen {
+    0%{
+        height: 150px;
+    }
+                        
+    100%{
+        height: 0px;
+    }                  
+}
+
+@keyframes vanishSlow {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }   
+}
+
+@keyframes floating {
+    0% {margin-left: 0;
+        margin-top: 0;
+        opacity: 1;
+    }
+    20% {
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+    40% {
+        margin-left: 0px;
+        margin-top: -30px;
+    }
+    60% {
+        margin-left: -20px;
+        margin-top: -50px;
+    }
+    80% {
+        margin-left: 0px;
+        margin-top: -70px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: -20px;
+        margin-top: -90px;
+    }
+}
+
+@keyframes greenClimbing {
+    0% {}
+
+    20% {
+        top: 180px;
+        left: 50px;
+    }
+    23% {
+        top: 180px;
+        left: 60px;
+    }
+    40% {
+        top: 160px;
+        left: 60px;
+    }
+    43% {
+        top: 160px;
+        left: 70px;
+    }
+    60% {
+        top: 140px;
+        left: 70px;
+    }
+    63% {
+        top: 140px;
+        left: 80px;
+    }
+    80% {
+        top: 120px;
+        left: 80px;
+    }
+    83% {
+        top: 120px;
+        left: 90px;
+    }
+    100% {
+        top: 100px;
+        left: 90px;
+    }
+}
+
+@keyframes greenSpeach {
+    0% {
+        top: 100px;
+        left: 90px;
+    }
+    100% {
+        top: 100px;
+        left: 90px;
+    }
+}
+
+@keyframes redmeoStay {
+    0% {
+        left: 650px;
+        bottom: 0px;}
+    100% {
+        left: 650px;
+        bottom: 0px;
+    }
+}
+
+@keyframes darkGreenComing {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes darkGreenSpeach {
+    0% {
+        width: 100px;
+        left: 200px;
+        bottom: 0px;
+    }
+    30% {
+        width: 100px;
+        left: 350px;
+        bottom: 0px;
+    }
+    32% {
+        width: 100px;
+        left: 350px;
+        bottom: 0px;
+    }
+    34% {
+        width: 100px;
+        left: 350px;
+        bottom: 30px;
+    }
+    36% {
+        width: 100px;
+        left: 350px;
+        bottom: 0px;
+    }
+    38% {
+        width: 100px;
+        left: 350px;
+        bottom: 30px;
+    }
+    40% {
+        width: 100px;
+        left: 350px;
+        bottom: 0px;
+    }
+    100% {
+        width: 100px;
+        left: 350px;
+    }
+}
+
+@keyframes greenStay {
+    0% {
+        top: 100px;
+        left: 90px;
+    }
+
+    100% {
+        top: 100px;
+        left: 90px;
+    }
+}
+
+@keyframes redReaction {
+    0% {
+        left: 650px;
+        bottom: 0px;        
+    }
+
+    10% {
+        left: 650px;
+        bottom: 0px;
+    }
+
+    12% {
+        left: 650px;
+        bottom: 30px;
+    }
+
+    14% {
+        left: 650px;
+        bottom: 0px;
+    }
+
+    100%{}
+}
+
+@keyframes up {
+    0% { opacity: 1; }
+    100% { 
+        opacity: 1;
+        margin-top: -80px; }
+}

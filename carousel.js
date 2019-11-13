@@ -2,7 +2,7 @@ $carousel = document.getElementById("carousel");
 $suivant = document.getElementById("suivant");
 $precedent = document.getElementById("precedent");
 index = 0
-indexMax = 3
+indexMax = (($carousel.children.length)-1)
 
 // Vous aurez besoin de ce genre de choses :
 // $carousel.style.borderColor = "#f00";
