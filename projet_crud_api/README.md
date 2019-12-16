@@ -1,3 +1,7 @@
+# Prerequisite
+
+This project need a basic server installed to work. [Link to install the server](https://github.com/hyphaene/todos_crud_express).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
